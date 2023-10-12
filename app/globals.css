@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply dark:bg-[#161616] bg-[#ffffff] transition-all ease-in duration-200;
+  }
+}
+
+@font-face {
+  font-family: PoppinsBlack;
+  src: url("../public/font/PoppinsBlack.ttf");
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../public/font/PoppinsBold.ttf");
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url("../public/font/PoppinsMedium.ttf");
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url("../public/font/PoppinsRegular.ttf");
+}
+
+.bigTexr {
+  width: 80%;
+  max-width: 780px;
+}
+.bigTexr .gooey {
+  padding: 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  filter: url("#goo");
+}
+
+.ql-syntax {
+  color: rgb(255, 0, 221);
+  background-color: #161616;
+}
